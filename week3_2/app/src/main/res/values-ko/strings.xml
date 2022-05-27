@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">3주차_2</string>
+    <string name="btn_start1">SUBACTIVITY 실행</string>
+    <string name="btn_start2">THIRDACTIVITY 실행</string>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txt_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="left">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="left">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_thr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ThridActivity"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/red"
+            android:textSize="30sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</FrameLayout>

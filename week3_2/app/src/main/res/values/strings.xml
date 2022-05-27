@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">week3_2</string>
+    <string name="btn_start1">OPEN SUBACTIVITY</string>
+    <string name="btn_start2">OPEN THIRDACTIVITY</string>
+</resources>

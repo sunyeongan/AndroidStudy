@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_test_01"
+        android:icon="@drawable/ic_action_plus"
+        android:title="테스트 1"
+        app:tint="@color/teal_200"
+        android:iconTint="@color/black"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_test_02"
+        android:icon="@color/cardview_dark_background"
+        android:title="테스트 2"/>
+
+    <item android:id="@+id/action_test_03"
+        android:icon="@drawable/ic_action_plus"
+        android:title="테스트 3"/>
+
+</menu>

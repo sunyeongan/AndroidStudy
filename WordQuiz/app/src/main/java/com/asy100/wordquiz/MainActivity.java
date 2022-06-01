@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     String dataPath = "";
     String langData = "kor";
 
+
     //사진 가져오기
     Uri photoUri;
     private static final int PICK_FROM_ALBUM = 2; // [앨범에서 사진 가져오기]
@@ -55,7 +56,8 @@ public class MainActivity extends AppCompatActivity {
     String result_image_string;
     ImageView imageView;
     TextView OCRTextView; //OCR 결과뷰
-    TextView descrption; //단어 뜻 결과
+    TextView searchResult2;
+    String notFoundWord = "사전에 없는 단어 입니다. ";
     Intent intent = new Intent();
 
 
@@ -120,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
                             });
 
                         } catch (Exception e) {
+                            searchResult2.setText(notFoundWord);
                             e.printStackTrace();
                         }
 
@@ -307,8 +310,11 @@ public class MainActivity extends AppCompatActivity {
 
             while (eventType != XmlPullParser.END_DOCUMENT) {
                 switch (eventType) {
+
                     case XmlPullParser.START_TAG:
                         tag = xpp.getName(); //태그 이름 얻어오기
+
+
 
                         if (tag.equals("item")) ; //첫번째 검색 결과
 
@@ -321,9 +327,12 @@ public class MainActivity extends AppCompatActivity {
 
                             if (!xpp.getText().contains("Naver Search Result"))
                                 sb.append(xpp.getText().replaceAll("<(/)?([a-zA-Z]*)(\\\\s[a-zA-Z]*=[^>]*)?(\\\\s)*(/)?>", ""));
+                            else
+                                sb.append(notFoundWord); //사전에 없는 단어라면
                         }
 
                         break;
+
 
 
                 }
